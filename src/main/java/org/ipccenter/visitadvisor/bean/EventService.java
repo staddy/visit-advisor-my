@@ -31,6 +31,7 @@ public class EventService {
         List<Event> events = new ArrayList<>(size);
         for (int i = 0; i < size; i++) {
             Event event = new Event(String.format("Event %3d", i), LocalDateTime.now().plusDays(i));
+            event.setId(Long.valueOf(i));
             events.add(event);
         }
         return events;
