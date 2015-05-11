@@ -14,3 +14,7 @@ hs_err_pid*
 # IDE configs
 /nb-configuration.xml
 /target/
+
+# IDEA project files
+visit-advisor.iml
+/.idea/

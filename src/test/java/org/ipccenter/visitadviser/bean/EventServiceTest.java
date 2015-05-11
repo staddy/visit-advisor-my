@@ -1,6 +1,8 @@
 package org.ipccenter.visitadviser.bean;
 
 import java.util.List;
+
+import org.ipccenter.visitadvisor.bean.EventContainer;
 import org.ipccenter.visitadvisor.bean.EventService;
 import org.ipccenter.visitadvisor.model.Event;
 import org.testng.Assert;
@@ -14,6 +16,7 @@ import org.testng.annotations.Test;
 public class EventServiceTest {
     
     public static void test() {
+        EventContainer container = new EventContainer();
         EventService service = new EventService();
         int size = 10;
         List<Event> events = service.createEvents(size);
